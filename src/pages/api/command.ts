@@ -58,6 +58,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // NOTE: 리뷰 상태에 따른 업데이트
 
   res.status(200).send({
+    response_type: "in_channel",
     blocks: [
       {
         type: "section",
